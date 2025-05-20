@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmes Badflix</title>
+    <link rel="stylesheet" href="atv.css">
+</head>
+<body>
+
+    <!-- Navegação -->
+    <header>
+        <nav>
+            <a class="logo" href="/vitória/filmes/filmes.html">Badflix</a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="/vitória/home/html.html">Home</a></li>
+                <li><a href="filmes.html">Series e Filmes</a></li>
+                <li><a href="filmes.html">Programas de TV</a></li>
+                <li><a href="filmes.html">Sports</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner com slideshow -->
+    <section class="banner">
+        <!-- Imagens que trocam automaticamente -->
+        <img src="img/3730759.webp" class="active" alt="Banner 1">
+        <img src="img/filmagem-completa-da-familia-correndo-no-prado.jpg" alt="Banner 2">
+        <img src="img/wp13375644-persona-3-reload-wallpapers.jpg" alt="Banner 3">
+
+        <!-- Texto e botão no banner -->
+        <div class="container">
+            <h1>Variedades de Filmes e Séries <br> é só aqui</h1>
+            <a href="/vitória/login/login.html" class="botao">Assine já!</a>
+        </div>
+    </section>
+
+    <!-- Conteúdo do site -->
+    <section class="conteudo">
+        <div class="videos">
+            <div class="info">
+                <h3>Título do Vídeo</h3>
+                <p>Descrição do vídeo aqui.</p>
+            </div>
+        </div>
+        <div class="videos">
+            <div class="info">
+                <h3>Título do Vídeo 2</h3>
+                <p>Descrição do segundo vídeo.</p>
+            </div>
+        </div>
+        <div class="videos">
+            <div class="info">
+                <h3>Título do Vídeo 3</h3>
+                <p>Mais detalhes sobre este vídeo.</p>
+            </div>
+        </div>
+        <div class="videos">
+            <div class="info">
+                <h3>Título do Vídeo 4</h3>
+                <p>Informações adicionais sobre este.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="conteudo">
+        <div class="videos">
+            <div class="info">
+                <h3>Título do Vídeo</h3>
+                <p>Descrição do vídeo aqui.</p>
+            </div>
+        </div>
+        <div class="videos">
+            <div class="info">
+                <h3>Título do Vídeo 2</h3>
+                <p>Descrição do segundo vídeo.</p>
+            </div>
+        </div>
+        <div class="videos">
+            <div class="info">
+                <h3>Título do Vídeo 3</h3>
+                <p>Mais detalhes sobre este vídeo.</p>
+            </div>
+        </div>
+        <div class="videos">
+            <div class="info">
+                <h3>Título do Vídeo 4</h3>
+                <p>Informações adicionais sobre este.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="conteudo">
+        <div class="videos">
+            <div class="info">
+                <h3>Título do Vídeo</h3>
+                <p>Descrição do vídeo aqui.</p>
+            </div>
+        </div>
+        <div class="videos">
+            <div class="info">
+                <h3>Título do Vídeo 2</h3>
+                <p>Descrição do segundo vídeo.</p>
+            </div>
+        </div>
+        <div class="videos">
+            <div class="info">
+                <h3>Título do Vídeo 3</h3>
+                <p>Mais detalhes sobre este vídeo.</p>
+            </div>
+        </div>
+        <div class="videos">
+            <div class="info">
+                <h3>Título do Vídeo 4</h3>
+                <p>Informações adicionais sobre este.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Script para trocar imagens do banner -->
+    <script>
+        const images = document.querySelectorAll(".banner img");
+        let current = 0;
+
+        setInterval(() => {
+            images[current].classList.remove("active");
+            current = (current + 1) % images.length;
+            images[current].classList.add("active");
+        }, 5000); 
+    </script>
+
+</body>
+</html>
