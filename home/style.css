@@ -5,11 +5,13 @@
     box-sizing: border-box;
 }
 
+
 /* Links */
 a {
     color: #ffffff;
     text-decoration: none;
     transition: 0.3s;
+    padding: 10px;
 }
 
 a:hover {
@@ -48,6 +50,7 @@ nav {
 .nav-list li {
     letter-spacing: 3px;
     margin-left: 32px;
+    
 }
 
 /* Mobile Menu Button */
