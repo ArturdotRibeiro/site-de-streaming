@@ -5,6 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Filmes Badflix</title>
     <link rel="stylesheet" href="atv.css">
+
+      <!-- swipper -->
+     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="scripts/script.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        new Swiper('.swiper', {
+            slidesPerView: 4,
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            });
+      });
+    </script>
+
 </head>
 <body>
 
@@ -44,101 +62,32 @@
 
     <!-- Conteúdo do site -->
     <section class="conteudo">
-        <div class="videos">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/hfLkFZWFmLM" frameborder="0" allowfullscreen></iframe>
-            <div class="info">
-                <h3>Título do Vídeo</h3>
-                <p>Descrição do vídeo aqui.</p>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <iframe width="560" height="315" class="img-swiper" src="https://www.youtube.com/embed/m9bOpeuvNwY" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="swiper-slide">
+                    <iframe width="560" height="315" class="img-swiper" src="https://youtu.be/Dyc8YANE6i8?si=NOes0aAfLXru530v" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="swiper-slide">
+                    <iframe width="560" height="315" class="img-swiper" src="https://www.youtube.com/embed/dD264ZjfKlk"  frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="swiper-slide">
+                    <iframe width="560" height="315" class="img-swiper" src="https://www.youtube.com/embed/t06RUxPbp_c" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="swiper-slide">
+                    <iframe width="560" height="315" class="img-swiper"  src="https://www.youtube.com/embed/hfLkFZWFmLM" frameborder="0" allowfullscreen></iframe>
+                </div>
             </div>
+            <div class="swiper-button-next" aria-label="Próximo" style="z-index: 2;"></div>
+            <div class="swiper-button-prev" aria-label="Anterior" style="z-index: 2;"></div>
         </div>
-        <div class="videos">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/t06RUxPbp_c" frameborder="0" allowfullscreen></iframe>
-            <div class="info">
-                <h3>Título do Vídeo 2</h3>
-                <p>Descrição do segundo vídeo.</p>
-            </div>
-        </div>
-        <div class="videos">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/m9bOpeuvNwY" frameborder="0" allowfullscreen></iframe>
-            <div class="info">
-                <h3>Título do Vídeo 3</h3>
-                <p>Mais detalhes sobre este vídeo.</p>
-            </div>
-        </div>
-        <div class="videos">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/dD264ZjfKlk" frameborder="0" allowfullscreen></iframe>
-            <div class="info">
-                <h3>Título do Vídeo 4</h3>
-                <p>Informações adicionais sobre este.</p>
-            </div>
-        </div>
-    </section>
-    <section class="conteudo">
-        <div class="videos">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/hfLkFZWFmLM" frameborder="0" allowfullscreen></iframe>
-            <div class="info">
-                <h3>Título do Vídeo</h3>
-                <p>Descrição do vídeo aqui.</p>
-            </div>
-        </div>
-    
-        <div class="videos">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/t06RUxPbp_c" frameborder="0" allowfullscreen></iframe>
-            <div class="info">
-                <h3>Título do Vídeo 2</h3>
-                <p>Descrição do segundo vídeo.</p>
-            </div>
-        </div>
-    
-        <div class="videos">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/m9bOpeuvNwY" frameborder="0" allowfullscreen></iframe>
-            <div class="info">
-                <h3>Título do Vídeo 3</h3>
-                <p>Mais detalhes sobre este vídeo.</p>
-            </div>
-        </div>
-    
-        <div class="videos">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/dD264ZjfKlk" frameborder="0" allowfullscreen></iframe>
-            <div class="info">
-                <h3>Título do Vídeo 4</h3>
-                <p>Informações adicionais sobre este.</p>
-            </div>
-        </div>
-    </section>
+        
 
-    <section class="conteudo">
-        <div class="videos">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/hfLkFZWFmLM" frameborder="0" allowfullscreen></iframe>
-            <div class="info">
-                <h3>Título do Vídeo</h3>
-                <p>Descrição do vídeo aqui.</p>
-            </div>
-        </div>
-    
-        <div class="videos">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/t06RUxPbp_c" frameborder="0" allowfullscreen></iframe>
-            <div class="info">
-                <h3>Título do Vídeo 2</h3>
-                <p>Descrição do segundo vídeo.</p>
-            </div>
-        </div>
-    
-        <div class="videos">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/m9bOpeuvNwY" frameborder="0" allowfullscreen></iframe>
-            <div class="info">
-                <h3>Título do Vídeo 3</h3>
-                <p>Mais detalhes sobre este vídeo.</p>
-            </div>
-        </div>
-    
-        <div class="videos">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/dD264ZjfKlk" frameborder="0" allowfullscreen></iframe>
-            <div class="info">
-                <h3>Título do Vídeo 4</h3>
-                <p>Informações adicionais sobre este.</p>
-            </div>
-        </div>
+        
+
+        
     </section>
      <!--rodapé  --> 
     <footer>
